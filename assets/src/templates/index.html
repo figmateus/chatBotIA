@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <title>Receitas do jacão</title>
+</head>
+<body>
+  <div class="box-questions">
+    <div class="header">
+      <p>Receitas do jacão</p>
+    </div>
+    <p id="status"></p>
+    <div id="history">
+      <!-- Aqui vai o chat gerado conforme as respostas -->
+    </div>
+    <div class="footer">
+      <input type="text" id="message-input" placeholder="Pergunte aqui...">
+      <button id="btn-submit" style="font-size:14px" onclick="voice()">Pesquisar <i class="fa fa-microphone"></i></button>
+      <!-- <button class="btn-submit"  id="btn-submit" >Enviar</button> -->
+    </div>
+  </div>
+</body>
+<!-- <script src="./src/main.js"></script> -->
+<!-- <script src="./src/main.py"></script> -->
+<script src="{{ url_for('static', filename='index.js') }}"></script>
+</html>
